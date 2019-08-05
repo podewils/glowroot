@@ -18,10 +18,20 @@
 
   <properties>
     <!-- instrumented libraries -->
-    <quartz.version>2.3.0</quartz.version>
   </properties>
 
   <dependencies>
+  	<dependency>
+      <groupId>org.glowroot</groupId>
+      <artifactId>glowroot-agent-plugin-api</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.quartz-scheduler</groupId>
+      <artifactId>quartz</artifactId>
+      <version>${quartz.version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -30,12 +40,6 @@
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.quartz-scheduler</groupId>
-      <artifactId>quartz</artifactId>
-      <version>${quartz.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
