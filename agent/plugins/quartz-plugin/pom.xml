@@ -18,6 +18,7 @@
 
   <properties>
     <!-- instrumented libraries -->
+    <quartz.version>1.8.6</quartz.version>
   </properties>
 
   <dependencies>
